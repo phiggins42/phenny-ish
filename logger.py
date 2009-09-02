@@ -9,8 +9,9 @@ License: AFL | New BSD
 import os, time;
 
 def setup(self): 
+   # FIXME: a file per room would be better, no?
    fn = self.nick + '-' + self.config.host + '.log.db'
-   self.log_filename = os.path.join(os.path.expanduser('~/.phenny/logs'), fn)
+   self.log_filename = os.path.join(os.path.expanduser('~/.phenny'), fn)
    if not os.path.exists(self.log_filename): 
       try: f = open(self.log_filename, 'w')
       except OSError: pass
