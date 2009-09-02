@@ -1,1 +1,9 @@
 Some Assorted phenny modules, aimed specifically at some #dojo tasks
+
+To Use:
+
+* Grab phenny - http://inamidst.com/phenny/phenny.tar.bz2
+* Unpack somewhere, run $archive/phenny to setup ~/.phenny/default.py
+	+ Edit as desired
+* Add .py files in this repo to $archive/modules/
+* Run $archive/phenny again to launch
