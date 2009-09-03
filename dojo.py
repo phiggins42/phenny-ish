@@ -14,8 +14,10 @@ def ticket(phenny, input):
     lines = response.split("\n", 1); #drop first line
     out = ""
     try:
+        # ugh, need to switch to CVS. This breaks if description has tab-spaced code inside.
         tid, summary, reporter, owner, description, type, status, priority, milestone, component, version, severity, resolution, keywords, cc = lines[1].split("\t")
     except ValueError: 
+        phenny.say(lines[1]);
         out = "I couldn't find a ticket with that id."
         pass
     else:
