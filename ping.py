@@ -14,7 +14,7 @@ def hello(phenny, input):
 hello.rule = r'(?i)(hi|hello|h[ie]ya?|moin|morning) $nickname\b'
 
 def thanks(phenny, input):
-    salutation = random.choice(('np', 'yw', 'anytime', 'de nada.', 'graag degaan'))
+    salutation = random.choice(('np', 'yw', 'anytime', 'de nada.', 'graag gedaan'))
     phenny.say(input.nick + ': ' + salutation);
 thanks.rule = r'(?i)(bedankt|thanks|thank\ you|danke) $nickname\b'
     
